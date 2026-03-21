@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_off_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="EPDS Screening"
+            android:textColor="@color/text_dark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Edinburgh Postpartum Depression Scale (Shortened)"
+            android:textColor="@color/text_dark"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="In the past 7 days:"
+            android:textColor="@color/accent_pink"
+            android:textStyle="bold" />
+
+        <!-- Q1 -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="1. I have been able to laugh and see the funny side of things" android:textColor="@color/text_dark" android:textStyle="bold" />
+        <RadioGroup android:id="@+id/rgQ1" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q1a1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="As much as I always could" android:tag="0" />
+            <RadioButton android:id="@+id/q1a2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Not quite so much now" android:tag="1" />
+            <RadioButton android:id="@+id/q1a3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Definitely not so much now" android:tag="2" />
+            <RadioButton android:id="@+id/q1a4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Not at all" android:tag="3" />
+        </RadioGroup>
+
+        <!-- Q2 -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="2. I have looked forward with enjoyment to things" android:textColor="@color/text_dark" android:textStyle="bold" />
+        <RadioGroup android:id="@+id/rgQ2" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q2a1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="As much as I ever did" android:tag="0" />
+            <RadioButton android:id="@+id/q2a2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rather less than I used to" android:tag="1" />
+            <RadioButton android:id="@+id/q2a3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Definitely less than I used to" android:tag="2" />
+            <RadioButton android:id="@+id/q2a4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hardly at all" android:tag="3" />
+        </RadioGroup>
+
+        <!-- Q3 -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="3. I have blamed myself unnecessarily when things went wrong" android:textColor="@color/text_dark" android:textStyle="bold" />
+        <RadioGroup android:id="@+id/rgQ3" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q3a1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Yes, most of the time" android:tag="3" />
+            <RadioButton android:id="@+id/q3a2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Yes, some of the time" android:tag="2" />
+            <RadioButton android:id="@+id/q3a3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Not very often" android:tag="1" />
+            <RadioButton android:id="@+id/q3a4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No, never" android:tag="0" />
+        </RadioGroup>
+
+        <!-- Q4 -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="4. I have been anxious or worried for no good reason" android:textColor="@color/text_dark" android:textStyle="bold" />
+        <RadioGroup android:id="@+id/rgQ4" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q4a1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No, not at all" android:tag="0" />
+            <RadioButton android:id="@+id/q4a2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hardly ever" android:tag="1" />
+            <RadioButton android:id="@+id/q4a3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Yes, sometimes" android:tag="2" />
+            <RadioButton android:id="@+id/q4a4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Yes, very often" android:tag="3" />
+        </RadioGroup>
+
+        <!-- Q5 -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="5. I have felt scared or panicky for no very good reason" android:textColor="@color/text_dark" android:textStyle="bold" />
+        <RadioGroup android:id="@+id/rgQ5" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q5a1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Yes, quite a lot" android:tag="3" />
+            <RadioButton android:id="@+id/q5a2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Yes, sometimes" android:tag="2" />
+            <RadioButton android:id="@+id/q5a3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No, not much" android:tag="1" />
+            <RadioButton android:id="@+id/q5a4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No, not at all" android:tag="0" />
+        </RadioGroup>
+
+        <!-- Q6 -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="6. Things have been getting on top of me" android:textColor="@color/text_dark" android:textStyle="bold" />
+        <RadioGroup android:id="@+id/rgQ6" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q6a1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Yes, most of the time I haven't been able to cope" android:tag="3" />
+            <RadioButton android:id="@+id/q6a2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Yes, sometimes I haven't been coping as well as usual" android:tag="2" />
+            <RadioButton android:id="@+id/q6a3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No, most of the time I have coped quite well" android:tag="1" />
+            <RadioButton android:id="@+id/q6a4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No, I have been coping as well as ever" android:tag="0" />
+        </RadioGroup>
+
+        <!-- Q7 -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="7. I have been so unhappy that I have had difficulty sleeping" android:textColor="@color/text_dark" android:textStyle="bold" />
+        <RadioGroup android:id="@+id/rgQ7" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q7a1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Yes, most of the time" android:tag="3" />
+            <RadioButton android:id="@+id/q7a2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Yes, sometimes" android:tag="2" />
+            <RadioButton android:id="@+id/q7a3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Not very often" android:tag="1" />
+            <RadioButton android:id="@+id/q7a4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No, not at all" android:tag="0" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnSubmitAssessment"
+            style="@style/Button.Rounded"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="32dp"
+            android:text="Submit Assessment" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/secondary_lavender"
+            app:cardCornerRadius="24dp">
+            <TextView
+                android:id="@+id/tvAssessmentResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="24dp"
+                android:textAlignment="center"
+                android:textColor="@color/text_dark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>

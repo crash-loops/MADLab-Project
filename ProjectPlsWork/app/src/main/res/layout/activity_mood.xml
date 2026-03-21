@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_off_white"
+    android:padding="24dp"
+    tools:context=".activities.MoodActivity">
+
+    <TextView
+        android:id="@+id/tvMoodTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="How are you feeling?"
+        android:textColor="@color/text_dark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rgMood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tvMoodTitle">
+
+        <RadioButton
+            android:id="@+id/rbHappy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="😊 Happy"
+            android:padding="8dp" />
+
+        <RadioButton
+            android:id="@+id/rbSad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="😢 Sad"
+            android:padding="8dp" />
+
+        <RadioButton
+            android:id="@+id/rbAnxious"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="😰 Anxious"
+            android:padding="8dp" />
+
+        <RadioButton
+            android:id="@+id/rbTired"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="😴 Tired"
+            android:padding="8dp" />
+    </RadioGroup>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilNote"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="Any thoughts? (Optional)"
+        app:layout_constraintTop_toBottomOf="@id/rgMood">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:minLines="3" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnSaveMood"
+        style="@style/Button.Rounded"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:text="Save Mood"
+        app:layout_constraintTop_toBottomOf="@id/tilNote" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
